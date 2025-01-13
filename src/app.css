@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+:root {
+  --green: #57f80d;
+  --white: #ffffff;
+  --black: #000000;
+}
+body{
+    background: var(--black);
+    font-family: "Roboto" , sans-serif;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
