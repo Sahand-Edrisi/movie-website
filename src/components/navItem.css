@@ -1,0 +1,11 @@
+header ul{
+    display: flex;
+    gap: 20px;
+}
+header ul li {
+    color: var(--white);
+    list-style: none;
+}
+header ul li.active {
+    color: var(--green);
+}

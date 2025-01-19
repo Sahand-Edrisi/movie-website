@@ -1,9 +1,10 @@
 {
   "homepage": "https://Sahand-Edrisi.github.io/movie-website",
-  "name": "movie",
+  "name": "movie-website",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "bootstrap": "^5.3.3",
     "cra-template": "1.2.0",
     "gh-pages": "^6.3.0",
     "react": "^19.0.0",
@@ -35,5 +36,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "web-vitals": "^4.2.4"
   }
 }

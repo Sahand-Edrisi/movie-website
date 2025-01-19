@@ -1,0 +1,25 @@
+.banner  .movieInformation .container .information {
+    display: flex;
+    gap: 15px;
+    color: var(--white);
+    font-size: 35px;
+    margin: 5px;
+}
+.banner  .movieInformation .container .information .ageLimit .text{
+background-color: var(--green);
+    color: var(--white);
+    padding: 0px 5px ;
+}
+.banner  .movieInformation .container .information .year{
+    border-right: 2px solid var(--white);
+    padding-right:  15px ;
+}
+.banner  .movieInformation .container .information .ageLimit{
+    border-right: 2px solid var(--white);
+    padding-right:  15px ;
+}
+.banner  .movieInformation .container .information .length{
+border-right: 2px solid var(--white);
+padding-right:  15px ;
+}
+
