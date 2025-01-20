@@ -1,18 +1,17 @@
-.banner .movieDate {
-    display: grid;
-      align-items: center;
-      justify-content: center;
-      justify-items: center;
-      width: 100%;
+.banner .movie-Date-trailer {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  width: 100%;
 }
-.banner .movieDate .date {
-  font-size: 100px;
+.banner .movie-Date-trailer .date {
+  font-size: 75px;
   padding-top: 60px;
   opacity: 0.6;
   font-weight: 900;
   text-shadow: 0px 0px 15px var(--white);
   text-transform: uppercase;
-    text-align: center;
+  text-align: center;
+  width: 80%;
 }
-
-
