@@ -5,9 +5,16 @@
   scroll-behavior: smooth;
 }
 :root {
-  --green: #57f80d;
-  --white: #ffffff;
+  --green: #68d336;
+  --white: #f5f0f0;
   --black: #000000;
+  --gray: #474545;
+}
+#root{
+  background-color: #000000;
+margin: 0;
+padding: 0;
+width: 100%;
 }
 body{
     background: var(--black);

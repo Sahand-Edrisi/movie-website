@@ -1,4 +1,4 @@
-header .search-box .container {
+.header .search-box .container {
 color: var(--white);
 display: flex;
 align-items: center;
@@ -6,21 +6,19 @@ border: 1px solid var(--white);
 gap: 10px;
 padding: 10px;
 }
-header .search-box .container ion-icon{
+.header .search-box .container ion-icon{
     color: var(--white);
 }
-header .search-box .container input{
+.header .search-box .container input{
     background: transparent;
     border: 0;
     color: var(--white);
 }
-header .search-box input:focus-visible{
+.header .search-box input:focus-visible{
     outline: none;
 }
-header .search-box input::placeholder{
+.header .search-box input::placeholder{
     color: var(--white);
 }
-/* header .search-box input:focus{
-    border: 0 !important;
-    color: var(--white);
-} */
+
+

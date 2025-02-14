@@ -1,0 +1,28 @@
+.comingSoon {
+  background-color: black;
+  width: 100%;
+  padding-top: 30px;
+}
+.comingSoon .title {
+  width: 100%;
+  padding: 10px;
+}
+.comingSoon .title .text {
+  padding: 15px;
+  margin: 0 10px;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: var(--white);
+}
+.comingSoon .title .line {
+  width: 50%;
+  margin: 10px 10px;
+  height: 5px;
+  background-image: linear-gradient(to right, var(--green), transparent 100%);
+}
+.comingSoon .movies {
+    margin: 0 70px;
+    padding: 30px 0 ;
+    display: flex;
+    overflow-y: auto;
+}

@@ -1,0 +1,22 @@
+.schedule .category .btnCategory{
+    margin: 0 20px;
+    display: flex;
+}
+.schedule .category .btnCategory .btn{
+    background-color: var(--gray);
+    color: var(--white);
+    padding: 10px 20px;
+    font-size: 15px;
+    margin: 10px 5px;
+    border: 0;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.schedule .category .btnCategory .btn.active{
+    background-color: var(--green);
+    color: var(--white);
+}
+.schedule .category .btnCategory .btn:hover{
+    background-color: var(--green);
+    color: var(--white);
+}

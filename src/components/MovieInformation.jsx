@@ -4,7 +4,6 @@ import "./movieInformation.css";
 import BtnBook from "./BtnBook";
 import BtnMyList from "./BtnMyList";
 function MovieInformation({ data }) {
-  console.log(data);
   return (
     <div className="movieInformation">
       <div className="container">

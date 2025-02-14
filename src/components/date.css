@@ -1,11 +1,16 @@
-.banner .movie-Date-trailer {
+ /* .movie-Date-trailer {
+position: absolute;
+top: 60px;
+left: 350px;
+ } */
+ .movie-Date-trailer {
   display: grid;
   align-items: center;
   justify-content: center;
   justify-items: center;
   width: 100%;
 }
-.banner .movie-Date-trailer .date {
+ .movie-Date-trailer .date {
   font-size: 75px;
   padding-top: 60px;
   opacity: 0.6;

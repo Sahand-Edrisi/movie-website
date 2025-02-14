@@ -1,0 +1,26 @@
+.blog {
+    background-color: black;
+    width: 100%;
+    padding-top: 30px;
+  }
+  .blog .title {
+    width: 100%;
+    padding: 10px;
+  }
+  .blog .title .text {
+    padding: 15px;
+    margin: 0 10px;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: var(--white);
+  }
+  .blog .title .line {
+    width: 50%;
+    margin: 10px 10px;
+    height: 5px;
+    background-image: linear-gradient(to right, var(--green), transparent 100%);
+  }
+  .blog .blogs{
+    display: flex;
+    padding: 40px 0px;
+  }

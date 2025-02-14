@@ -1,21 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, {useState } from "react";
 import "./banner.css";
 import MovieInformation from "../components/MovieInformation";
 import Date from "../components/Date";
 import WatchTrailer from "../components/WatchTrailer";
 import SwiperShow from "../components/SwiperShow";
-function Banner() {
-  const [movies, setMovies] = useState([]);
 
-  const fetchData = () => {
-    fetch("http://localhost:3000/movie-website/data/movieData.json")
-      .then((res) => res.json())
-      .then((data) => setMovies(data))
-      .catch((e) => console.log(e.massage));
-  };
-  useEffect(() => {
-    fetchData();
-  }, []);
+function Banner({ data }) {
+  const [movies, setMovies] = useState(data);
   function sendId(id) {
     const newMovie = movies.map((movie) => {
       movie.active = false;
@@ -26,19 +17,15 @@ function Banner() {
     });
     setMovies(newMovie);
   }
+
   return (
     <>
-      <div className="banner">
-        {movies && movies.length > 0
-          ? movies.map((movie) =>
-              movie.active ? (
-                <div className="movie" key={movie._id}>
-                  <img
-                    src={movie.bgImg}
-                    alt=""
-                    className={`bgImg ${movie.active ? "active" : undefined}`}
-                  />
-                  <div className="row-one">
+      {movies && movies.length > 0
+        ? movies.map((movie, index) =>
+            movie.active ? (
+              <div key={index} className={"banner active"} id="home" style={{backgroundImage:`url(${movie.bgImg})`,objectFit : "cover",backgroundRepeat : "no-repeat"}}>
+                <div className="movie" key={index}>
+                  <div className="row">
                     <div className="movie-content">
                       <MovieInformation data={movie} />
                     </div>
@@ -48,13 +35,11 @@ function Banner() {
                     </div>
                   </div>
                 </div>
-              ) : undefined
-            )
+                <SwiperShow sendId={sendId} movies={movies} />
+              </div>
+            ) : undefined
+          )
           : undefined}
-        <div className="row-two">
-          <SwiperShow sendId={sendId} movies={movies} />
-        </div>
-      </div>
     </>
   );
 }

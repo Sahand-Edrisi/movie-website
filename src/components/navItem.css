@@ -1,11 +1,17 @@
-header ul{
+ .header .navItems{
     display: flex;
     gap: 20px;
+    height: 60px;
+    align-items: center;
+    margin-bottom: 0;
 }
-header ul li {
+ .header .navItems a{
     color: var(--white);
     list-style: none;
+    cursor: pointer;
+    text-decoration: none;
 }
-header ul li.active {
+ .header .navItems a.active {
     color: var(--green);
 }
+

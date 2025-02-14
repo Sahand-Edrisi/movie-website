@@ -1,16 +1,19 @@
-.banner  .movieInformation .container {
+
+.movieInformation .container {
 padding: 20px;
 }
-.banner  .movieInformation .container .titleImg img{
-width: 350px;
+ .movieInformation .container .titleImg img{
+width: 250px;
 height: 100px;
 object-fit: cover;
 }
-.banner  .movieInformation .container .description{
+ .movieInformation .container .description{
 color: var(--white);
 margin: 10px;
+width: 50%;
 }
-.banner  .movieInformation .container .btns{
+ .movieInformation .container .btns{
 display: flex;
 gap: 15px;
+
 }

@@ -1,4 +1,4 @@
-.banner  .movieInformation .container .btns .myList{
+ .movieInformation .container .btns .myList{
     background-color: var(--green);
     display: flex;
     align-items: center;
@@ -8,11 +8,11 @@
     gap: 10px;
     margin: 5px;
        }
-   .banner  .movieInformation .container .btns .myList ion-icon{
+    .movieInformation .container .btns .myList ion-icon{
     color: var(--white);
     font-size: 25px;
        }
-   .banner  .movieInformation .container .btns .myList .text{
+    .movieInformation .container .btns .myList .text{
    color: var(--white);
    font-size: 25px;
    text-transform: uppercase;
