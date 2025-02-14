@@ -9,9 +9,11 @@ import Blog from "./pages/Blog";
 import Footer from "./pages/Footer";
 
 function App() {
-const [scroll , setScroll] = useState(0)
- 
-const fetchData = () => {
+  const [scroll, setScroll] = useState(0);
+  const [movies, setMovies] = useState([]);
+  const [blog, setBlog] = useState([]);
+
+  const fetchData = () => {
     fetch("http://localhost:3000/movie-website/data/movieData.json")
       .then((res) => res.json())
       .then((data) => setMovies(data))
@@ -24,23 +26,21 @@ const fetchData = () => {
       .then((data) => setBlog(data))
       .catch((e) => console.log(e.massage));
   };
-  
+
   useEffect(() => {
     fetchData();
     BlogData();
   }, []);
 
-useEffect(()=>{
-  window.addEventListener("scroll" , ()=>{
-    setScroll(window.scrollY)
-  })
-},[scroll])
-  const [movies, setMovies] = useState([]);
-  const [blog, setBlog] = useState([]);
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      setScroll(window.scrollY);
+    });
+  }, [scroll]);
 
   return movies.length > 0 ? (
     <>
-      <Header scroll={scroll}/>
+      <Header scroll={scroll} />
       <Banner data={movies} />
       <Schedule data={movies} />
       <ComingSoon data={movies} />

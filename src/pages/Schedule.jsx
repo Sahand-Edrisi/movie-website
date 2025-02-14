@@ -23,7 +23,7 @@ function Schedule({data}) {
     if (nameCategory === "All") {
       fetchDataShowMovies();
     }
-    movies.map((category) => {
+    movies.map((category)=>{
       if (nameCategory === category.category) {
         categoryItems.push(category);
       }
