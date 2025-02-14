@@ -27,6 +27,7 @@ function Schedule({data}) {
       if (nameCategory === category.category) {
         categoryItems.push(category);
       }
+      return category
     });
     setMoviesShow(categoryItems);
   }
