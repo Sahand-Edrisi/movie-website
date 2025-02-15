@@ -15,14 +15,14 @@ function App() {
   const [movies, setMovies] = useState([]);
 
   const fetchData = () => {
-    fetch("http://localhost:3000/movie-website/data/movieData.json")
+    fetch("https://sahand-edrisi.github.io/movie-website/data/movieData.json")
       .then((res) => res.json())
       .then((data) => setMovies(data))
       .catch((e) => console.log(e.massage));
   };
 
   const BlogData = () => {
-    fetch("http://localhost:3000/movie-website/data/blogData.json")
+    fetch("https://sahand-edrisi.github.io/movie-website/data/blogData.json")
       .then((res) => res.json())
       .then((data) => setBlog(data))
       .catch((e) => console.log(e.massage));
@@ -40,7 +40,7 @@ function App() {
   }, [scroll]);
   console.log("object");
   console.log(movies);
-  return movies.length>0 ?
+  return movies.length> 0 ?
     <>
       <Header scroll={scroll} />
       <Banner data={movies} />
