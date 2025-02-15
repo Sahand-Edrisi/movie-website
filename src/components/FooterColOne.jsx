@@ -3,7 +3,7 @@ import "./footerColOne.css";
 function FooterColOne() {
   return (
     <div className="col1">
-      <dive className="title">CINEMA</dive>
+      <div className="title">CINEMA</div>
       <div className="lorem">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro maiores
         numquam libero totam facilis quasi voluptates, earum voluptatibus harum

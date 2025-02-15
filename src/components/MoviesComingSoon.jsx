@@ -11,23 +11,23 @@ function MoviesComingSoon({ data }) {
     breakpoints={{
       400: {
         slidesPerView: 1,
-        spaceBetween: 30,
+        spaceBetween: 10,
       },
       800:{
         slidesPerView: 2,
-        spaceBetween: 30,
+        spaceBetween: 10,
       },
       1000:{
         slidesPerView: 3,
-        spaceBetween: 30,
+        spaceBetween: 20,
       },
       1200:{
         slidesPerView: 4,
-        spaceBetween: 30,
+        spaceBetween: 20,
       },
       1300: {
         slidesPerView: 5,
-        spaceBetween: 30,
+        spaceBetween: 20,
       },
       1400: {
         slidesPerView: 6,
@@ -35,7 +35,7 @@ function MoviesComingSoon({ data }) {
       },
       1500: {
         slidesPerView: 7,
-        spaceBetween: 20,
+        spaceBetween: 30,
       },
     }}
       spaceBetween={30}

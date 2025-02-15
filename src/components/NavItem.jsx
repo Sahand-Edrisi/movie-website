@@ -2,7 +2,6 @@ import React from "react";
 import "./navItem.css";
 
 function NavItem({ item, click }) {
-  console.log(item);
   return (
     <a href={`#${item.name}`}
       className={`items ${item.active ? "active" : undefined}`}
