@@ -9,24 +9,32 @@ function MoviesComingSoon({ data }) {
   return (
     <Swiper
     breakpoints={{
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 20,
-      },
       400: {
+        slidesPerView: 1,
+        spaceBetween: 30,
+      },
+      800:{
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      1000:{
         slidesPerView: 3,
         spaceBetween: 30,
       },
-      640: {
+      1200:{
         slidesPerView: 4,
         spaceBetween: 30,
       },
-      700: {
+      1300: {
+        slidesPerView: 5,
+        spaceBetween: 30,
+      },
+      1400: {
         slidesPerView: 6,
         spaceBetween: 30,
       },
       1500: {
-        slidesPerView: 8,
+        slidesPerView: 7,
         spaceBetween: 20,
       },
     }}

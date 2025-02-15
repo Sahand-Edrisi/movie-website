@@ -1,5 +1,6 @@
 .footer .items .col2 {
   display: flex;
+  z-index: 10;
 }
 .footer .items .col2 .col {
   display: grid;

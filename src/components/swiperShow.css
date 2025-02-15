@@ -1,7 +1,7 @@
  .swiperBox{
     background-color: black;
     opacity: .8;
-    margin: 10px auto;
+    margin: 20px auto;
     width: 60%;
     border-radius: 20px;
     padding: 10px;
@@ -9,15 +9,12 @@
     height: 160px;
     display: block;
     padding-left: 30px;
+    
   } 
   .swiper {
     width: 100%;
   }
- /* #mySwiper{
-    background-position: center;
-    background-size: cover;
-    height: 240px;
-  } */
+
   #mySwiper img{
     width: 100px;
     height: 150px;

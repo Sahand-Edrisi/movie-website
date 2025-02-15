@@ -5,25 +5,14 @@
   display: block;
   padding-top: 50px;
   width: 100%;
-  background-size: 100%
-;
+  background-size: 100%;
 }
 
-/* .bgImg {
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  display: block;
-  position: absolute;
-  object-fit: cover;
-  object-position: center;  
-} */
 .movie{
   position: relative;
   z-index: 3;
 }
-.movie .row {
+.movie {
   padding-top: 10px;
   display: grid;
   grid-template-columns: auto auto;

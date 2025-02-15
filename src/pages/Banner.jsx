@@ -1,4 +1,4 @@
-import React, {useState } from "react";
+import React, { useState } from "react";
 import "./banner.css";
 import MovieInformation from "../components/MovieInformation";
 import Date from "../components/Date";
@@ -23,23 +23,29 @@ function Banner({ data }) {
       {movies && movies.length > 0
         ? movies.map((movie, index) =>
             movie.active ? (
-              <div key={index} className={"banner active"} id="home" style={{backgroundImage:`url(${movie.bgImg})`,objectFit : "cover",backgroundRepeat : "no-repeat"}}>
+              <div
+                key={index}
+                className={"banner active"}
+                id="home"
+                style={{
+                  backgroundImage: `url(${movie.bgImg})`,
+                  objectFit: "cover",
+                  backgroundRepeat: "no-repeat",
+                  width: "100%",
+                }}
+              >
                 <div className="movie" key={index}>
-                  <div className="row">
-                    <div className="movie-content">
                       <MovieInformation data={movie} />
-                    </div>
                     <div className="movie-Date-trailer">
                       <Date date={movie.date} />
                       <WatchTrailer trailer={movie.video} />
                     </div>
-                  </div>
                 </div>
                 <SwiperShow sendId={sendId} movies={movies} />
               </div>
             ) : undefined
           )
-          : undefined}
+        : undefined}
     </>
   );
 }

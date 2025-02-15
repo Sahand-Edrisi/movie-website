@@ -32,8 +32,8 @@
   background-color: black;
   width: 950px;
   height: 550px;
-  top: 0px;
-  left: 0px;
+  /* top: 0px;
+  left: 0px; */
   display: flex;
   align-items: center;
   justify-content: center;

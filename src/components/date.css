@@ -12,7 +12,7 @@ left: 350px;
 }
  .movie-Date-trailer .date {
   font-size: 75px;
-  padding-top: 60px;
+  padding: 20px;
   opacity: 0.6;
   font-weight: 900;
   text-shadow: 0px 0px 15px var(--white);

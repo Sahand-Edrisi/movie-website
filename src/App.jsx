@@ -7,6 +7,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import ComingSoon from "./pages/ComingSoon";
 import Blog from "./pages/Blog";
 import Footer from "./pages/Footer";
+import "./responsive/responsive.css"
 
 function App() {
   const [scroll, setScroll] = useState(0);

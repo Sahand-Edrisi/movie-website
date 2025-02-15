@@ -10,9 +10,7 @@ function MovieInformation({ data }) {
         <div className="titleImg">
           <img src={data.titleImg} alt="" />
         </div>
-        <div className="information">
-          <Information data={data} />
-        </div>
+        <Information data={data} />
         <div className="description">{data.description}</div>
         <div className="btns">
           <BtnBook />

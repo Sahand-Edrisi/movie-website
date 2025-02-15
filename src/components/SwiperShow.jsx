@@ -6,19 +6,20 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import { Autoplay, EffectCoverflow } from "swiper/modules";
 function SwiperShow({ movies, sendId }) {
-  const modules = [ Autoplay ,EffectCoverflow];
+  const modules = [Autoplay, EffectCoverflow];
   return (
     <div className="swiperBox">
       <Swiper
+
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
-        slidesPerView={9}
-        slidesPerGroup={3}
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,
         }}
+        slidesPerView= {6}
+        slidesPerGroup= {2}
         coverflowEffect={{
           rotate: 50,
           stretch: 0,
