@@ -1,12 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import reportWebVitals from "./reportWebVitals";
-import Datas from "./Datas";
+// import Datas from "./Datas";
+import Test from "./test";
 import { BrowserRouter } from "react-router-dom";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <BrowserRouter>
-      <Datas />
+      {/* <Datas /> */}
+      <Test/>
     </BrowserRouter>
 );
 reportWebVitals();

@@ -31,6 +31,7 @@ function Datas() {
 
   return (
     <Routes>
+      
       <Route path="/movie-website/" element={<App scroll={scroll} blog={blog} movies={movies} />}/>
     </Routes>
   )

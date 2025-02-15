@@ -41,7 +41,6 @@ function App({movies,scroll,blog}) {
 
     return movies.length > 0 ? (
       <>
-      <h1>hi</h1>
         <Header scroll={scroll} />
         <Banner data={movies} />
         <Schedule data={movies} />
