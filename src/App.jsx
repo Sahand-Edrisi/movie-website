@@ -28,29 +28,27 @@ function App() {
       .catch((e) => console.log(e.massage));
   };
 
-  // useEffect(() => {
-  //   fetchData();
-  //   BlogData();
-  // },[]);
+  useEffect(() => {
     fetchData();
     BlogData();
+  }, []);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
       setScroll(window.scrollY);
     });
   }, [scroll]);
-console.log("object")
-    return movies.length > 0 ? (
-      <>
-        <Header scroll={scroll} />
-        <Banner data={movies} />
-        <Schedule data={movies} />
-        <ComingSoon data={movies} />
-        <Blog data={blog} />
-        <Footer />
-      </>
-    ) : undefined;
+  console.log("object");
+  console.log(movies);
+  return (
+    <>
+      <Header scroll={scroll} />
+      <Banner data={movies} />
+      <Schedule data={movies} />
+      <ComingSoon data={movies} />
+      <Blog data={blog} />
+      <Footer />
+    </>)
 }
 
 export default App;
