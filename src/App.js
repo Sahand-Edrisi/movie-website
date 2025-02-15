@@ -28,17 +28,19 @@ function App() {
       .catch((e) => console.log(e.massage));
   };
 
-  useEffect(() => {
+  // useEffect(() => {
+  //   fetchData();
+  //   BlogData();
+  // },[]);
     fetchData();
     BlogData();
-  }, []);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
       setScroll(window.scrollY);
     });
   }, [scroll]);
-
+console.log("object")
     return movies.length > 0 ? (
       <>
         <Header scroll={scroll} />
