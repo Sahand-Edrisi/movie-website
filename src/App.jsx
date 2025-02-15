@@ -48,14 +48,8 @@ function App() {
       <ComingSoon data={movies} />
       <Blog data={blog} />
       <Footer />
-    </> : <>
-      <Header scroll={scroll} />
-      <Banner data={movies} />
-      <Schedule data={movies} />
-      <ComingSoon data={movies} />
-      <Blog data={blog} />
-      <Footer />
-    </>
+    </> : undefined
+
 }
 
 export default App;
