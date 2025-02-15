@@ -1,35 +1,36 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./schedule.css";
 import BtnCategory from "../components/BtnCategory";
 import ScheduleMovies from "../components/ScheduleMovies";
 import btnCategoryData from "../data/btnCategoryData";
-function Schedule({data}) {
+function Schedule({ data }) {
   const [movies] = useState(data);
-  const [moviesShow, setMoviesShow] = useState(data);
-
-
-  const fetchDataShowMovies = () => {
-    fetch("http://localhost:3000/movie-website/data/movieData.json")
-      .then((res) => res.json())
-      .then((data) => setMoviesShow(data))
-      .catch((e) => console.log(e.message));
-  };
-  useEffect(() => {
-    fetchDataShowMovies();
-  }, []);
+  const [CategoryData, setCategoryData] = useState(btnCategoryData);
+  const [movieShowData, setMovieShowData] = useState(movies);
 
   function ShowCategory(nameCategory) {
-    const categoryItems = [];
-    if (nameCategory === "All") {
-      fetchDataShowMovies();
-    }
-    movies.map((category)=>{
-      if (nameCategory === category.category) {
-        categoryItems.push(category);
+    const categoryItems = CategoryData.map((category) => {
+      category.active = false;
+      if (nameCategory === category.title) {
+        category.active = true;
       }
-      return category
+      return category;
     });
-    setMoviesShow(categoryItems);
+    setCategoryData(categoryItems);
+    movieShow(nameCategory);
+  }
+  function movieShow(nameCategory) {
+    if (nameCategory === "All") {
+      return setMovieShowData(movies);
+    }
+    const newMovies = [];
+    movies.map((movie) => {
+      if (movie.category === nameCategory) {
+        newMovies.push(movie);
+      }
+      return movie;
+    });
+    setMovieShowData(newMovies);
   }
   return (
     <div className="schedule" id="schedule">
@@ -38,11 +39,11 @@ function Schedule({data}) {
         <div className="line"></div>
       </div>
       <div className="category">
-        <BtnCategory data={btnCategoryData} ShowCategory={ShowCategory} />
+        <BtnCategory data={CategoryData} ShowCategory={ShowCategory} />
       </div>
       <div className="movies">
-        {moviesShow && moviesShow.length > 0 ? (
-          <ScheduleMovies movies={moviesShow} />
+        {movies && movies.length > 0 ? (
+          <ScheduleMovies movies={movieShowData} />
         ) : undefined}
       </div>
     </div>

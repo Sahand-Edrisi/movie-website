@@ -8,7 +8,7 @@ function BtnCategory({ ShowCategory, data }) {
         <div
           key={index}
           id={category._id}
-          className={`btn ${category.active ? "active" : undefined}`}
+          className={`btn ${category.active ? "active" : ""}`}
           onClick={() => ShowCategory(category.title)}
         >
           {category.title}
