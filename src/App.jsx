@@ -38,6 +38,7 @@ function App() {
       setScroll(window.scrollY);
     });
   }, [scroll]);
+  console.log("object");
   return movies.length > 0 ? (
     <>
       <Header scroll={scroll} />
