@@ -1,6 +1,6 @@
 Movie-website
 
-link : https://sahand-edrisi.github.io/movie-website/
+To view the demo click on the link  : https://sahand-edrisi.github.io/movie-website/
 
 ![sample-Movie-web-site](https://github.com/user-attachments/assets/6832b6c2-e577-4d87-98e6-ce9075c422c7)
 
