@@ -1,4 +1,10 @@
-# Getting Started with Create React App
+Movie-website
+
+link : https://sahand-edrisi.github.io/movie-website/
+
+![sample-Movie-web-site](https://github.com/user-attachments/assets/6832b6c2-e577-4d87-98e6-ce9075c422c7)
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
