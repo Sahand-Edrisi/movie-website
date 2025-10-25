@@ -1,3 +1,4 @@
+
 import Information from "./Information";
 import "./movieInformation.css";
 import BtnBook from "./BtnBook";

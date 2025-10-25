@@ -1,3 +1,4 @@
+
 import "./searchBox.css";
 
 function SearchBox() {

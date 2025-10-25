@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import "./banner.css";
 import MovieInformation from "../components/MovieInformation";

@@ -1,3 +1,4 @@
+
 import "./comingSoon.css"
 import MoviesComingSoon from '../components/MoviesComingSoon'
 export default function ComingSoon({data}) {

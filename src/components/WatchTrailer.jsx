@@ -1,3 +1,4 @@
+
 import "./watchTrailer.css";
 function WatchTrailer({ trailer }) {
   return (

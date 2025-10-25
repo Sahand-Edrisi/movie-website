@@ -1,3 +1,4 @@
+
 import "./blogsItem.css";
 function BlogsItem({ data }) {
   return data.map((blog, index) => (

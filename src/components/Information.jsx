@@ -1,3 +1,4 @@
+
 import "./information.css";
 function Information({ data }) {
   return (

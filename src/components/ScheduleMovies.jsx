@@ -1,3 +1,4 @@
+
 import "./scheduleMovies.css";
 function ScheduleMovies({ movies }) {
 
