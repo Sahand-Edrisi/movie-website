@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  z-index: 900;
+}
+.header .bgColor {
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  z-index: -1;
+  opacity: 0.8;
+  top: -3px;
+
+}
+.header .line {
+  width: 100%;
+  height: 5px;
+  z-index: 100;
+  position: absolute;
+  bottom: -2px;
+}
+.header h4 {
+  color: var(--white);
+}
+.header.active .bgColor {
+  filter: blur(1px);
+  background-color: var(--black);
+  box-shadow: 0 0 30px var(--black);
+} 
+ .header.active .line {
+background-image:linear-gradient(to right , transparent , var(--green) ,transparent) ;
+}

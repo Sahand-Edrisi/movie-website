@@ -1,0 +1,19 @@
+.banner {
+  display: none;
+}
+.banner.active {
+  display: block;
+  padding-top: 50px;
+  width: 100%;
+  background-size: 100%;
+}
+
+.movie{
+  position: relative;
+  z-index: 3;
+}
+.movie {
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: auto auto;
+}

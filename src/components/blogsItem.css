@@ -1,0 +1,42 @@
+.blog .blogs .container {
+  box-shadow: 0 0 15px var(--gray);
+  margin: 10px;
+  padding: 0;
+  width: 320px;
+  height: 400px;
+  font-weight: 600;
+}
+.blog .blogs .container img {
+  width: 320px;
+  height: 220px;
+  object-fit: cover;
+}
+.blog .blogs .container .category {
+  color: var(--gray);
+  padding: 10px;
+  font-size: 14px;
+}
+.blog .blogs .container .title {
+  color: var(--white);
+  padding: 0 10px;
+}
+.blog .blogs .container .profile {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+.blog .blogs .container .profile .img img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin: 20px;
+}
+.blog .blogs .container .profile .details .name{
+  color: var(--white);
+}
+.blog .blogs .container .profile .details .date{
+  color: var(--gray);
+  font-size: 14px;
+}
+

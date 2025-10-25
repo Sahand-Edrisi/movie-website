@@ -1,0 +1,29 @@
+.footer .items .col1 {
+  display: grid;
+  align-items: center;
+}
+.footer .items .col1 .title {
+  z-index: 2;
+  color: var(--white);
+  padding-left: 200px;
+  font-size: 20px;
+  font-weight: 900;
+}
+.footer .items .col1 .lorem {
+  z-index: 2;
+  color: var(--white);
+  padding-left: 200px;
+  font-size: 11px;
+  width: 90%;
+}
+.footer .items .col1 .iconsSocialMedia {
+  z-index: 2;
+  padding-left: 200px;
+  height: 20px;
+}
+
+.footer .items .col1 .iconsSocialMedia ion-icon {
+  color: var(--white);
+  font-size: 20px;
+  padding: 0 5px;
+}

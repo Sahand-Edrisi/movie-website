@@ -1,0 +1,23 @@
+.header .singBtn .container {
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--green);
+  padding: 10px;
+  transition: 0.8s ease-in-out;
+  cursor: pointer;
+}
+.header .singBtn .container:hover {
+  color: var(--white);
+  background-color: transparent;
+  transition: 0.8s ease-in-out;
+}
+.header .singBtn .container ion-icon {
+  color: var(--white);
+  font-size: 20px;
+}
+.header .singBtn .container .text {
+  color: var(--white);
+  text-transform: uppercase;
+}

@@ -1,0 +1,85 @@
+.ScheduleMovies {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 0px;
+  justify-content: center;
+}
+.ScheduleMovies .container {
+  width: 200px;
+  height: 280px;
+  display: grid;
+  justify-content: center;
+  margin: 20px 10px;
+  box-shadow: 0 0 10px var(--white);
+}
+.ScheduleMovies .container .hover {
+  width: 200px;
+  height: 280px;
+  position: absolute;
+  background-color: transparent;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  visibility: hidden;
+}
+.ScheduleMovies .container:hover .hover {
+  visibility: visible;
+}
+
+.ScheduleMovies .container .hover .hoverBackground {
+  position: absolute;
+  width: 200px;
+  height: 280px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--gray);
+  opacity: 0.6;
+  left: -12px;
+}
+.ScheduleMovies .container .hover .name {
+  position: absolute;
+  display: grid;
+  justify-items: center;
+color: aliceblue;
+}
+.ScheduleMovies .container .hover .name .line {
+  height: 2px;
+  width: 100%;
+  margin: 5px;
+  background-image: linear-gradient(
+    to right,
+    var(--green) 30%,
+    transparent 100%
+  );
+}
+.ScheduleMovies .container .hover .name .icons {
+font-size: 25px;
+  
+}
+
+.ScheduleMovies .container .information {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--gray);
+  height: 30px;
+}
+.ScheduleMovies .container .information .length {
+  border-right: 1px solid var(--white);
+  padding-right: 10px;
+}
+.ScheduleMovies .container .information .categoryText {
+  padding-left: 10px;
+}
+
+.ScheduleMovies img {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+}

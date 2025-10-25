@@ -1,0 +1,249 @@
+@media screen and (max-width: 1400px) {
+  .movie {
+    grid-template-columns: auto;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .movie .date {
+    padding: 20px 0;
+  }
+  .movie .movieInformation .information {
+    justify-content: center;
+  }
+  .movie .movieInformation .description {
+    width: 100%;
+  }
+  .movie .movieInformation .btns {
+    width: 100%;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .header .navItems a {
+    font-size: 14px;
+  }
+  .header .search-box .container {
+    font-size: 12px;
+    padding: 5px;
+  }
+  .header .singBtn .container {
+    padding: 5px;
+  }
+  .header .singBtn .container .text {
+    font-size: 12px;
+  }
+  .movie .movieInformation .information {
+    font-size: 25px;
+  }
+  .movie .movieInformation .btns .book ion-icon,
+  .movie .movieInformation .btns .myList ion-icon,
+  .movie .movieInformation .btns .myList .text,
+  .movie .movieInformation .btns .book .text {
+    font-size: 20px;
+  }
+  .movie .movie-Date-trailer .date {
+    font-size: 60px;
+  }
+  .movie-Date-trailer .watchTrailer .icon #video .bacIframe {
+    width: 750px;
+    height: 450px;
+  }
+  .movie-Date-trailer .watchTrailer .icon iframe {
+    width: 650px;
+    height: 350px;
+  }
+  .footer .items .col2 .col .title {
+    font-size: 12px;
+  }
+  .footer .items .col2 .col {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .header .navItems a {
+    font-size: 12px;
+  }
+  .header .search-box .container {
+    font-size: 10px;
+    padding: 5px;
+  }
+  .header .singBtn .container {
+    padding: 4px;
+  }
+  .header .singBtn .container .text {
+    font-size: 10px;
+  }
+  .footer .items .col1 .title {
+    font-size: 12px;
+    padding-left: 150px;
+  }
+  .footer .items .col1 .lorem {
+    font-size: 8px;
+    padding-left: 150px;
+  }
+  .footer .items .col1 .iconsSocialMedia {
+    padding-left: 150px;
+  }
+  .footer .items .col1 .iconsSocialMedia ion-icon {
+    font-size: 12px;
+  }
+  .movie-Date-trailer .watchTrailer .icon #video .bacIframe {
+    width: 650px;
+    height: 400px;
+  }
+  .movie-Date-trailer .watchTrailer .icon iframe {
+    width: 550px;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .header h4 {
+    font-size: 10px;
+  }
+  .header .navItems a {
+    font-size: 10px;
+  }
+  .header .search-box .container {
+    font-size: 8px;
+    padding: 4px;
+  }
+
+  .header .singBtn .container .text {
+    font-size: 8px;
+  }
+  .header .singBtn .container ion-icon {
+    font-size: 10px;
+  }
+  .footer .items .col1 .title,
+  .footer .items .col1 .lorem,
+  .footer .items .col1 .iconsSocialMedia {
+    padding-left: 80px;
+  }
+
+  .movie-Date-trailer .watchTrailer .icon #video .bacIframe {
+    width: 550px;
+    height: 350px;
+  }
+  .movie-Date-trailer .watchTrailer .icon iframe {
+    width: 450px;
+    height: 250px;
+  }
+  .movie .movie-Date-trailer .date {
+    font-size: 40px;
+  }
+  .schedule .category .btnCategory .btn {
+
+    padding: 5px 10px;
+    font-size: 10px;
+    margin: 5px 5px;
+
+}
+
+}
+@media screen and (max-width: 680px) {
+  .header .search-box {
+    display: none;
+  }
+  .schedule .category .btnCategory {
+    flex-wrap: wrap;
+  }
+  .footer .items .col1 .title,
+  .footer .items .col1 .lorem,
+  .footer .items .col1 .iconsSocialMedia {
+    padding-left: 10px;
+  }
+  .footer .items .col2 .col .title {
+    font-size: 10px;
+  }
+  .footer .items .col2 .col {
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .movie-Date-trailer .watchTrailer .icon #video .bacIframe {
+    width: 450px;
+    height: 300px;
+  }
+  .movie-Date-trailer .watchTrailer .icon #video .bacIframe #close {
+    font-size: 25px;
+  }
+  .movie-Date-trailer .watchTrailer .icon iframe {
+    width: 350px;
+    height: 200px;
+  }
+  .footer .items .col1 .title,
+  .footer .items .col1 .lorem,
+  .footer .items .col1 .iconsSocialMedia {
+    padding-left: 5px;
+  }
+  
+  .footer .items .col2 .col .title {
+    font-size: 8px;
+  }
+  .footer .items .col2 .col {
+    font-size: 6px;
+  }
+  .footer .items .col1 .title {
+    font-size: 10px;
+  }
+  .footer .items .col1 .lorem {
+    font-size: 6px;
+  }
+  
+}
+@media screen and (max-width: 480px) {
+  .movie-Date-trailer .watchTrailer .icon #video .bacIframe {
+    width: 300px;
+    height: 200px;
+  }
+  .movie-Date-trailer .watchTrailer .icon iframe {
+    width: 250px;
+    height: 150px;
+  }
+
+  .movie .movieInformation .information {
+    font-size: 15px;
+  }
+  .movie .movieInformation .description {
+    font-size: 15px;
+  }
+
+  .movie .movieInformation .btns .book ion-icon,
+  .movie .movieInformation .btns .myList ion-icon,
+  .movie .movieInformation .btns .myList .text,
+  .movie .movieInformation .btns .book .text {
+    font-size: 12px;
+  }
+  .movie .movie-Date-trailer .date {
+    font-size: 30px;
+  }
+  .movie .movie-Date-trailer .watchTrailer .play {
+    font-size: 25px;
+  }
+  .movie .movie-Date-trailer .watchTrailer {
+    font-size: 25px;
+  }
+  .footer .items .col2 {
+    width: 230px;
+}
+}
+@media screen and (max-width: 440px) {
+    
+.header .navItems a{
+    font-size: 8px;
+}
+.header h4 {
+    font-size: 8px;
+}
+.header .singBtn .container {
+    padding: 2px;
+}
+.header .singBtn .container ion-icon {
+    font-size: 8px;
+}
+.header .singBtn .container .text {
+    font-size: 6px;
+}
+}
